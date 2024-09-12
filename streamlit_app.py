@@ -152,7 +152,7 @@ def refresh_recordings():
         user_id=user_detail['user_id']
         user_name=user_detail['user_name']
         user_email=user_detail['email']
-        month_count=12
+        month_count=18
         for month in range(month_count):
             print(f"Getting recordings for {user_detail['user_id']} for month {month} of {month_count}")
             recordings=get_zoom_recordings(access_token, user_id,month,30)
@@ -204,10 +204,10 @@ def one_run():
     #st.write("Got access token")
     if st.sidebar.button("Refresh Recordings"):
         print("Refreshing recordings")
-        st.write("Refreshing recordings")
+        #st.write("Refreshing recordings")
         refresh_recordings()
         print("Finished refreshing recordings")
-        st.write("Finished refreshing recordings")
+        #st.write("Finished refreshing recordings")
     print("Getting recordings")
     #st.write("Getting recordings")
     recordings=get_cache_recordings()
