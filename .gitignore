@@ -1,5 +1,7 @@
 .streamlit/secrets.toml
 
+zoom_recordings.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
